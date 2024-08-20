@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIBILITY AND Z-INDEX</title>
+</head>
+<style>
+#box1{
+    /* display: none; */
+   /* visibility: hidden;   it will reserve the value for you but in display it will not reserve space for*/  
+    width: 170px;
+    height: 170px;
+    background-color: red;
+    color: white;
+    z-index: 25;
+}
+
+#box2{
+/* z index only work for positions absolute, sticky , relative
+suppose we have two boxes and we want first will override the second one so for that which box z-index is greater this
+box will overide that box in that chase second box override the first onw*/
+position: relative;
+top: 25px;
+z-index: 26;
+width: 170px;
+height: 170px;
+background-color: brown;
+color: white;
+
+}
+#box3{
+
+width: 170px;
+height: 170px;
+background-color: purple;
+color: white;
+
+}
+#box4{
+
+width: 170px;
+height: 170px;
+background-color: green;
+color: white;
+
+}
+</style>
+<body>
+    
+<P>VISIBILITY AND Z-INDEX</P>
+
+<div class="box" id="box1"></div>
+<div class="box" id="box2"></div>
+<div class="box" id="box3"></div>
+<div class="box" id="box4"></div>
+
+</body>
+</html>

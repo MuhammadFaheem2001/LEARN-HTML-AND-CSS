@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quries</title>
+</head>
+<style>
+    .box {
+        background-color: red;
+        color: white;
+        border: 2px solid black;
+        display: none;
+
+    }
+
+    @media only screen and (max-width: 299px) {
+
+        #box-1 {
+            display: block;
+            background-color: cyan;
+        }
+    }
+
+    @media (min-width: 300px) and (max-width: 400px) {
+
+        #box-2 {
+            display: block;
+            background-color: brown;
+        }
+    }
+
+
+    @media (min-width: 401px) and (max-width: 499px) {
+
+        #box-3 {
+            display: block;
+            background-color: grey;
+        }
+    }
+
+
+    @media (min-width: 500px) and (max-width: 1500px) {
+
+        #box-4 {
+            display: block;
+            background-color: red;
+        }
+    }
+</style>
+
+<body>
+
+    <div class="box" id="box-1">I-PHONE</div>
+    <div class="box" id="box-2">ANDROID</div>
+    <div class="box" id="box-3">TABLET</div>
+    <div class="box" id="box-4">COMPUTER</div>
+
+
+
+</body>
+
+</html>
+
+<!-- @media is used to make a responsive website for phones and tv's 
+ 
+33 vidoes done here-->
