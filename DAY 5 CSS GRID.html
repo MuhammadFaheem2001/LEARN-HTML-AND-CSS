@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID</title>
+</head>
+<style>
+    .contanier{
+        display: grid;
+        /* it will create the three columns these values */
+        /* grid-template-columns: 100px 200px auto; */
+        /* grid-template-columns: 100px auto 300px; */
+        grid-template-columns: 1fr 2fr 3fr;
+        /* grid-template-columns:repeat(10, auto);  first is repeat at second one is width */
+        /* background-color: black; */
+        grid-gap: 2rem;
+        width: 100%;
+        height: 100%;
+
+    }
+    .item{
+        /* width: 200px;
+        height: 100px; */
+        background-color: blueviolet;
+        color: azure;
+        margin: 3px 2px;
+        border: 2px solid red;
+    }
+</style>
+<body>
+    <div class="contanier">
+        <div class="item">THIS IS ITEM 1</div>
+        <div class="item">THIS IS ITEM 2</div>
+        <div class="item">THIS IS ITEM 3</div>
+        <div class="item">THIS IS ITEM 4</div>
+        <div class="item">THIS IS ITEM 5</div>
+        <div class="item">THIS IS ITEM 6</div>
+    </div>
+</body>
+</html>
