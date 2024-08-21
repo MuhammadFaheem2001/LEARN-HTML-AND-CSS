@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX AND SHADOW</title>
+</head>
+<style>
+.box1{
+    background-color: rgb(196, 235, 89);
+    border: 5px solid rgb(127, 99, 228);
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 329px;
+    height: 256px;
+    box-shadow: 10px 5px 5px;
+
+}
+.box2{
+    background-color: rgb(236, 107, 161);
+    border: 5px solid rgb(255, 96, 96);
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    width: 329px;
+    height: 256px;
+    box-shadow: 10px 5px 5px;
+    
+}
+.box3{
+    background-color: rgb(236, 96, 96);
+    border: 5px solid rgba(213, 221, 139, 0.226);
+    position: absolute;
+    top: 25px;
+    left: 412px;
+    width: 345px;
+    height: 256px;
+    /* box-shadow: 10px 5px 5p 4x; for upper shadow write values in negative for downwards write positive */
+    /* box-shadow: -20px -2px; */
+    box-shadow: inset 4px 4px ;
+
+}
+
+.box1 p{
+    color: rgb(24, 14, 14);
+    
+}
+
+
+.box2 p{
+    color: rgb(15, 14, 14);
+}
+
+
+.box3 p{
+    color: rgb(14, 13, 13);
+}
+
+.box1 h1{
+    text-shadow: 5px 0px 0px 0px red;
+    /* x-axis , y-axis , blur , inset offset , color  */
+}
+</style>
+<body>
+    <div class="box1">
+    <h1>PARAGRAPH</h1>
+<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed rerum qui iure dolores sequi vel error ut adipisci eveniet repellendus cupiditate dolore dolorum magni delectus aliquid quo neque dolor, debitis, in facilis! Magnam vel perspiciatis magni esse, eaque quibusdam sed eum, asperiores corporis, velit veritatis consectetur odio ipsam. Autem, eligendi.</p>
+    </div>
+    <div class="box2">
+        <h1>PARAGRAPH</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed rerum qui iure dolores sequi vel error ut adipisci eveniet repellendus cupiditate dolore dolorum magni delectus aliquid quo neque dolor, debitis, in facilis! Magnam vel perspiciatis magni esse, eaque quibusdam sed eum, asperiores corporis, velit veritatis consectetur odio ipsam. Autem, eligendi.</p>
+    </div>
+    <div class="box3">
+        <h1>PARAGRAPH</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed rerum qui iure dolores sequi vel error ut adipisci eveniet repellendus cupiditate dolore dolorum magni delectus aliquid quo neque dolor, debitis, in facilis! Magnam vel perspiciatis magni esse, eaque quibusdam sed eum, asperiores corporis, velit veritatis consectetur odio ipsam. Autem, eligendi.</p>
+    </div>
+</body>
+</html>
