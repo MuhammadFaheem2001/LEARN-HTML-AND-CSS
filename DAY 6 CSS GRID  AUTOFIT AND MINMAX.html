@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID: AUTOFIT AND MIN/MAX</title>
+</head>
+<style>
+
+.container{
+    display: grid;
+    grid-gap: 1rem;
+    /* grid-template-columns: 100px 100px 100px; */
+    /* grid-template-columns: repeat(3, 200px); */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* grid-template-rows: repeat(3, 200px); */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    justify-content: center;
+}
+
+.box{
+    border: 2px solid red;
+    background-color: palevioletred;
+    width: 100px;
+    height: 50px;
+}
+
+</style>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
